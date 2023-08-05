@@ -1,1 +1,50 @@
 2023-08-03 18:31:20,788 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 16:12:09,579 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 17:00:39,979 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 17:01:23,701 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 17:02:02,126 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 17:03:40,851 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 17:06:47,451 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 17:07:03,853 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 18:02:41,531 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 18:03:13,442 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 18:03:44,627 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 18:05:49,165 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 18:13:20,958 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 18:30:20,708 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 18:31:11,120 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 18:31:29,343 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 18:31:32,980 ERROR: Exception on /user/balls [GET] [in C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Andy\Projects\FlaskTutorial\app\routes.py", line 69, in user
+    form = EmptyForm()
+NameError: name 'EmptyForm' is not defined
+2023-08-04 18:32:00,231 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 18:33:28,070 ERROR: Exception on /follow/andy [POST] [in C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Andy\Projects\FlaskTutorial\app\routes.py", line 96, in follow
+    form = EmptyForm()
+NameError: name 'EmptyForm' is not defined
+2023-08-04 18:34:10,766 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 18:36:46,621 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-04 20:07:27,006 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
