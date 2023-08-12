@@ -48,3 +48,43 @@ NameError: name 'EmptyForm' is not defined
 2023-08-04 18:34:10,766 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
 2023-08-04 18:36:46,621 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
 2023-08-04 20:07:27,006 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-11 16:11:12,040 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-11 16:36:01,384 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-11 16:37:18,449 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-11 16:37:31,087 ERROR: Exception on /index [GET] [in C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\app.py:1414]
+Traceback (most recent call last):
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\Andy\Projects\FlaskTutorial\app\routes.py", line 21, in index
+    return render_template('index.html', title='Home', form = form, posts = posts)
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\templating.py", line 132, in _render
+    rv = template.render(context)
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Andy\Projects\FlaskTutorial\app\templates\index.html", line 1, in top-level template code
+    {%extends "base.html"%}
+  File "C:\Users\Andy\Projects\FlaskTutorial\app\templates\base.html", line 31, in top-level template code
+    {%block content%} {%endblock%}
+  File "C:\Users\Andy\Projects\FlaskTutorial\app\templates\index.html", line 20, in block 'content'
+    {% include '_post.html' %}
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Andy\Projects\FlaskTutorial\venv\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: _post.html
+2023-08-11 16:37:54,690 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-11 16:48:23,815 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-11 16:59:48,251 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
+2023-08-11 17:00:15,080 INFO: Microblog startup [in C:\Users\Andy\Projects\FlaskTutorial\app\__init__.py:40]
